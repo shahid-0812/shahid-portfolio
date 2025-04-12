@@ -6,7 +6,7 @@ const Projects = () => {
         {
             id: 1,
             title: "Casa Design Studio",
-            description: "A modern interior design studio website with a clean, elegant aesthetic. Features a responsive design with smooth scrolling, interactive galleries showcasing various design projects, and a contact form. The minimalist black and white color scheme emphasizes the visual content and creates a sophisticated user experience.",
+            description: "A modern interior design studio website with a clean, black-and-white aesthetic and smooth, responsive design. It features interactive galleries and a contact form to showcase projects elegantly.",
             image: "/images/casa.jpg", // Replace with your image path
             tags: ["React", "CSS3", "Node.js"],
             liveLink: "https://casadesignstudio.vercel.app/",
@@ -15,7 +15,7 @@ const Projects = () => {
         {
             id: 2,
             title: "Classic Print & Pack",
-            description: "A dynamic website for a printing and packaging company featuring a modern, vibrant design. The site showcases the company's services with interactive product galleries, machinery, and detailed service descriptions. Includes a quote request system, responsive design for all devices, and smooth animations that highlight the company's premium packaging solutions and printing capabilities.",
+            description: "A vibrant, dynamic website for a printing and packaging company with interactive galleries, service details, and smooth animations. It includes a quote request system and responsive design for all devices.",
             image: "/printpack-website.jpg",
             tags: ["React", "CSS3", "JavaScript", "Responsive Design"],
             liveLink: "#",
@@ -24,7 +24,7 @@ const Projects = () => {
         {
             id: 3,
             title: "Sentilytics",
-            description: "A web application that analyzes the sentiment of comments from CSV files or YouTube videos. It features a clean and user-friendly interface, supports file uploads, and displays results using visual charts. Built for users to easily understand if comments are positive, negative, or neutral.",
+            description: "A web app that analyzes comment sentiment from CSV files or YouTube videos with a clean, user-friendly interface. It supports uploads and shows results using visual charts for easy understanding.",
             image: "/sentilytics-website.jpg",
             tags: ["React", "JavaScript", "CSV", "YouTube API"],
             liveLink: "#",
