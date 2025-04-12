@@ -1,7 +1,4 @@
-
-import Navbar from "../Components/navbar";
 import "../Styles/home.css";
-import { Link } from "react-router-dom";
 import Skills from "./skills";
 import About from "./about";
 import Projects from "./projects"
