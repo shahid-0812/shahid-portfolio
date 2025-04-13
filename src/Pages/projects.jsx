@@ -10,25 +10,28 @@ const Projects = () => {
             image: "/images/casa.jpg", // Replace with your image path
             tags: ["React", "CSS3", "Node.js"],
             liveLink: "https://casadesignstudio.vercel.app/",
-            codeLink: "#"
+            codeLink: "https://github.com/Akil-Shaikh/Casa_design",
+            target: "_blank"
         },
         {
             id: 2,
             title: "Classic Print & Pack",
             description: "A vibrant, dynamic website for a printing and packaging company with interactive galleries, service details, and smooth animations. It includes a quote request system and responsive design for all devices.",
-            image: "/printpack-website.jpg",
+            image: "/images/classic.jpg",
             tags: ["React", "CSS3", "JavaScript", "Responsive Design"],
-            liveLink: "#",
-            codeLink: "#"
+            liveLink: "/under-dev",
+            codeLink: "https://github.com/shahid-0812/classicprintandpack",
+            target: ""
         },
         {
             id: 3,
             title: "Sentilytics",
             description: "A web app that analyzes comment sentiment from CSV files or YouTube videos with a clean, user-friendly interface. It supports uploads and shows results using visual charts for easy understanding.",
-            image: "/sentilytics-website.jpg",
+            image: "/images/sentilytics.jpg",
             tags: ["React", "JavaScript", "CSV", "YouTube API"],
-            liveLink: "#",
-            codeLink: "#"
+            liveLink: "/https://github.com/shahid-0812/sentilytics",
+            codeLink: "/under-dev",
+            target: ""
         },
 
 
@@ -65,10 +68,10 @@ const Projects = () => {
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-description">{project.description}</p>
                             <div className="project-links">
-                                <a href={project.liveLink} className="project-link project-link-live" target='_blank'>
+                                <a href={project.liveLink} className="project-link project-link-live" target={project.target}>
                                     Live Demo
                                 </a>
-                                <a href={project.codeLink} className="project-link project-link-code" target='_blank'>
+                                <a href={project.codeLink} className="project-link project-link-code" target={project.target}>
                                     View Code
                                 </a>
                             </div>

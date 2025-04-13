@@ -1,0 +1,13 @@
+.underdev {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underdev h1 {
+    font-size: 8rem;
+    font-family: "sub-heading";
+    color: white;
+}
