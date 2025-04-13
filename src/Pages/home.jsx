@@ -2,6 +2,7 @@ import "../Styles/home.css";
 import Skills from "./skills";
 import About from "./about";
 import Projects from "./projects"
+import Contact from "./contact";
 import { useRef, useEffect, useState } from "react";
 
 function Home() {
@@ -10,7 +11,9 @@ function Home() {
     const skillsRef = useRef(null);
     const projectsRef = useRef(null);
     const aboutRef = useRef(null);
+    const contactRef = useRef(null);
     const glowRef = useRef(null);
+
 
 
 
@@ -52,9 +55,19 @@ function Home() {
                                 <div className="line"></div>
                                 <div className="home-link" >Projects</div>
                             </div>
+                            <div className="link" onClick={() => scrollToSection(contactRef)}>
+                                <div className="line"></div>
+                                <div className="home-link" >Contact</div>
+                            </div>
                         </div>
                     </div>
                     <div className="social-media-links flex">
+                        <div className="social">
+                            <a href="tel:9824423433" target="_blank">
+                                <i className="bi bi-phone"></i>
+                                <span>+91 9824423433</span>
+                            </a>
+                        </div>
                         <div className="social">
                             <a href="https://www.linkedin.com/in/shahidshaikh555" target="_blank">
                                 <i className="bi bi-linkedin"></i>
@@ -68,6 +81,7 @@ function Home() {
                                 <span>email</span>
                             </a>
                         </div>
+
                         <div className="social">
                             <a href="https://github.com/shahid-0812" target="_blank">
                                 <i className="bi bi-github"></i>
@@ -83,9 +97,14 @@ function Home() {
                     <div ref={skillsRef}>
                         <Skills />
                     </div>
+
                     <div ref={projectsRef}>
                         <Projects />
                     </div>
+                    <div ref={contactRef}>
+                        <Contact />
+                    </div>
+
                 </div>
             </div>
         </>

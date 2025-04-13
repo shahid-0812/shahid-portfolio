@@ -46,8 +46,9 @@
     width: 80%;
     height: 100vh;
     /* padding: 5rem 5rem; */
-    justify-content: space-around;
-    gap: 10rem;
+    justify-content: space-between;
+    /* gap: 10rem; */
+    padding: 3rem 0;
     flex-direction: column;
     align-items: center;
     position: sticky;
@@ -90,7 +91,12 @@
 .social-media-links {
     display: flex;
     gap: 1rem;
+    width: 17rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 1rem 0rem;
+    /* background-color: red; */
 }
 
 .social {
@@ -102,6 +108,7 @@
     /* filter: blur(1px); */
     transform: perspective(10cm) rotateY(45deg);
 }
+
 
 .social i {
     font-size: 1rem;

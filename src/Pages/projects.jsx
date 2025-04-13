@@ -29,8 +29,8 @@ const Projects = () => {
             description: "A web app that analyzes comment sentiment from CSV files or YouTube videos with a clean, user-friendly interface. It supports uploads and shows results using visual charts for easy understanding.",
             image: "/images/sentilytics.jpg",
             tags: ["React", "JavaScript", "CSV", "YouTube API"],
-            liveLink: "/https://github.com/shahid-0812/sentilytics",
-            codeLink: "/under-dev",
+            liveLink: "/under-dev",
+            codeLink: "/https://github.com/shahid-0812/sentilytics",
             target: ""
         },
 
