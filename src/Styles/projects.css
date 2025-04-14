@@ -198,4 +198,20 @@
     transform: translateY(-2px);
 }
 
+@media screen and (max-width: 768px) {
 
+    .projects-container {
+        padding: 0;
+    }
+    .project-image{
+        height: 200px;
+    }
+
+    .projects-header p {
+        font-size: 1.1rem;
+    }
+
+    .projects-grid {
+        margin: 0;
+    }
+}
