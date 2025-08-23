@@ -68,9 +68,6 @@ const Projects = () => {
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-description">{project.description}</p>
                             <div className="project-links">
-                                <a href={project.liveLink} className="project-link project-link-live" target={project.target}>
-                                    Live Demo
-                                </a>
                                 <a href={project.codeLink} className="project-link project-link-code" target={project.target}>
                                     View Code
                                 </a>

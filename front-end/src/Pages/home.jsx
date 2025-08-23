@@ -12,6 +12,8 @@ function Home() {
     const projectsRef = useRef(null);
     const aboutRef = useRef(null);
     const contactRef = useRef(null);
+
+
     const glowRef = useRef(null);
 
 
