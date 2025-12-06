@@ -1,16 +1,34 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useRef } from "react";
+import { LeftSection } from "./LeftSection"
+import { RightSection } from "./RightSection"
 
-import Home from "./Pages/home"
-import Underdev from "./Pages/underdev";
+
 function App() {
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/under-dev" element={<Underdev />} />
-      </Routes>
+      <div className="flex max-sm:flex-col">
+        <LeftSection
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
+
+        <RightSection
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+        />
+
+      </div>
     </>
   )
 }
+
 export default App

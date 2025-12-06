@@ -1,11 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'tailwindcss';
 
+@font-face {
+  font-family: bold;
+  src: url('../public/fonts/bold.otf');
+}
+
+@font-face {
+  font-family: medium;
+  src: url('../public/fonts/medium.otf');
+}
+
+@font-face {
+  font-family: light;
+  src: url('../public/fonts/light.otf');
 }
 
 body {
-    /* background-color: rgba(59, 130, 246, .5); */
-    background-color: #0f172a;
+  font-family: 'medium';
+  background-color: #0f172a;
+}
+
+.bold {
+  font-family: bold;
+}
+
+.light {
+  font-family: light;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #60a5fa, transparent);
+  bottom: -10px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.vertical {
+  height: 130px;
+  width: 4px;
+  background: linear-gradient(to bottom, #60a5fa, rgba(96, 165, 250, 0.3));
+  border-radius: 1rem;
+  position: relative;
+}
+
+.vertical::before,
+.vertical::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #60a5fa;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vertical::before {
+  top: 0;
+}
+
+.vertical::after {
+  bottom: 0;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(100, 116, 139, 0.1);
+  transition: all 0.3s ease;
+
+
+  &:hover {
+    transform: translateY(-5px);
+    background-color: rgba(51, 65, 85, 0.7);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(100, 116, 139, 0.2);
+  }
+
+}
+
+.edu-card {
+  font-family: "light", sans-serif;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: rgba(30, 41, 59, 0.7);
+  padding: 2.5rem 2.5rem;
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(100, 116, 139, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.edu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #60a5fa, transparent);
+  opacity: 0.8;
+}
+
+.social {
+  position: relative;
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+}
+
+.social:hover {
+  transform: perspective(10cm) rotateY(45deg);
 }
