@@ -54,12 +54,35 @@ export const Contact = () => {
             <form className="flex flex-col gap-3 w-full" onSubmit={handlSubmit}>
 
                 <div className="flex items-center gap-3 max-lg:flex-col">
-                    <input type="text" className='card-shadow w-full outline-0  rounded-xl light px-8 py-5 focus:border-[#60a5fa]!' placeholder='Enter Your Name' value={formData.name} onChange={handleChange} />
-                    <input type="text" className='card-shadow w-full outline-0  rounded-xl light px-8 py-5 focus:border-[#60a5fa]!' placeholder='Enter Your Email' value={formData.email} onChange={handleChange} />
+                    <input
+                        type="text"
+                        name="name"
+                        className='card-shadow w-full outline-0 rounded-xl light px-8 py-5 focus:border-[#60a5fa]!'
+                        placeholder='Enter Your Name'
+                        value={formData.name}
+                        onChange={handleChange}
+                    />
+
+                    <input
+                        type="text"
+                        name="email"
+                        className='card-shadow w-full outline-0 rounded-xl light px-8 py-5 focus:border-[#60a5fa]!'
+                        placeholder='Enter Your Email'
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
                 </div>
+
                 <div className="flex items-stretc gap-3">
-                    <textarea type="text" className='card-shadow w-full h-full outline-0  rounded-xl light px-8 py-5 focus:border-[#60a5fa]!' placeholder='Enter Your Message' value={formData.message} onChange={handleChange} />
+                    <textarea
+                        name="message"
+                        className='card-shadow w-full h-full outline-0 rounded-xl light px-8 py-5 focus:border-[#60a5fa]!'
+                        placeholder='Enter Your Message'
+                        value={formData.message}
+                        onChange={handleChange}
+                    />
                 </div>
+
                 <button type="text" className='card-shadow w-full outline-0 cursor-pointer rounded-xl light px-8 py-5 hover:border-[#60a5fa]!' placeholder='Enter Your Email ' disabled={isSubmitting} >
                     {isSubmitting ? "Sending..." : "Submit"}
                 </button>
