@@ -5,21 +5,21 @@ export const Education = () => {
     const Edu = [
         {
             id: 1,
-            time: "March-2022",
-            title: "12th GSEB",
-            institute: "F.D. Higher Secondary School, Ahmedabad",
-        },
-        {
-            id: 2,
             time: "2022-2025",
             title: "Bachelor of Science in Information Technology",
             institute: "GLS UNIVERSITY, Ahmedabad",
         },
         {
-            id: 3,
+            id: 2,
             time: "July 2023-August 2024",
             title: "UI/UX and Graphic Design Course",
             institute: "Kshitij Vivan, Ahmedabad",
+        },
+        {
+            id: 3,
+            time: "July 2025-2027",
+            title: "Master of Science in Information Technology",
+            institute: "LJ UNIVERSITY, Ahmedabad",
         },
     ];
     return (
