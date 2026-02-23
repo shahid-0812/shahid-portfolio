@@ -47,7 +47,7 @@ export const LeftSection = ({ aboutRef, skillsRef, projectsRef, contactRef }) =>
                     <div className="flex justify-center items-center gap-3">
                         <a href='mailto:shahidshaikh.081204@gmail.com' target='_blank' className='social'>
                             <i className="bi bi-envelope mr-2"></i>
-                            linkedin
+                            email
                         </a>
                         <a href='https://github.com/shahid-0812' target='_blank' className='social'>
                             <i className="bi bi-github mr-2"></i>
